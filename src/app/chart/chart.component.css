@@ -1,0 +1,55 @@
+.dark_chart {
+  background: #1d1d1d;
+}
+
+.light_chart {
+  background: #e5e5e5;
+}
+
+.chart_header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.mode_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 3.5rem;
+  border: none;
+  width: auto;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 0 1rem;
+  border-radius: 4px;
+}
+
+.dark_btn,
+.light_btn {
+  background-color: #f0f0f0;
+  color: #1f1f1f;
+  transition: background-color 0.5s ease;
+}
+
+.dark_btn:hover {
+  background-color: #6e18e9;
+  color: white;
+}
+
+.light_btn:hover {
+  background-color: #bb86fc;
+  color: white;
+}
+
+.mode_icon i {
+  font-size: 1.3rem;
+}
+
+.curenttime_txt {
+  margin: 1rem;
+}

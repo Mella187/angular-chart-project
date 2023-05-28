@@ -1,0 +1,10 @@
+<div class="custom-select">
+  <mat-form-field>
+    <mat-label>Choose a new city</mat-label>
+    <mat-select [(ngModel)]="selectedCity" (selectionChange)="onCityChange()">
+      <mat-option *ngFor="let city of cities" [value]="city.timezone">
+        {{ city.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

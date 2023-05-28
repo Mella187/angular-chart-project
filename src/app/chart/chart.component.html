@@ -1,0 +1,19 @@
+<div class="chart_header">
+  <button
+    (click)="toggleMode()"
+    class="mode_btn"
+    [ngClass]="{ dark_btn: lightMode, light_btn: !lightMode }"
+  >
+    <div class="mode_icon">
+      <i *ngIf="lightMode" class="fa-regular fa-sun"></i>
+      <i *ngIf="!lightMode" class="fa-regular fa-moon"></i>
+    </div>
+    <span class="mode_txt">{{ lightMode ? "Light Mode" : "Dark Mode" }}</span>
+  </button>
+
+  <app-dropdown></app-dropdown>
+</div>
+
+<div [ngClass]="{ light_chart: lightMode, dark_chart: !lightMode }">
+  <canvas #scatterChartCanvas></canvas>
+</div>
